@@ -26,8 +26,7 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-# Crear tablas (solo si no existen)
-Base.metadata.create_all(bind=engine)
+
 
 # Ruta de prueba
 @app.get('/', tags=['Hello'])
@@ -50,3 +49,7 @@ app.include_router(routerPromocion)
 app.include_router(routerPedidos)
 # Ruta de los Detalles
 app.include_router(routerDetalles)
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=10000, reload=True)

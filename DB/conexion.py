@@ -5,10 +5,10 @@ from DB.base import Base  # Usamos Base desde archivo separado
 
 # Datos de conexión
 USER = "root"
-PASSWORD = "trolleo27"  # Si tienes contraseña, colócala aquí
-HOST = "localhost"
-PORT = "3306"
-DB_NAME = "tienda_comics"
+PASSWORD = "GtYxEWnnVoGIKcBCInnyadvKGlnMBOTO"  # Si tienes contraseña, colócala aquí
+HOST = "interchange.proxy.rlwy.net"
+PORT = "53650"
+DB_NAME = "railway"
 
 # URL de conexión a MySQL con PyMySQL
 DATABASE_URL = f"mysql+pymysql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DB_NAME}"
